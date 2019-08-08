@@ -1,0 +1,63 @@
+<div id="content">
+  <div class="landing-bg">
+    <div class="container-fluid">
+      
+      <div class="row row-eq-height mt-3">
+        <div class="col-lg-10">
+          <ngb-carousel *ngIf="images" #carousel interval="2000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
+            <div class="carousel-inner">
+              <ng-template ngbSlide>
+                <div class="row">
+                  <div class="col-lg-5 col-sm-12 "><img [src]="images[0]" class="img-fluid"></div>
+                  <div class="col-lg-7 col-sm-12">
+                    <div class="carousel-text-bg">
+                      <h2>What is Lorem Ipsum?</h2>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. </p>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                <div class="row">
+                  <div class="col-lg-5 col-sm-12 "><img [src]="images[1]" class="img-fluid"></div>
+                  <div class="col-lg-7 col-sm-12">
+                    <div class="carousel-text-bg">
+                      <h2>What is Lorem Ipsum?</h2>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. </p>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                  <div class="row">
+                    <div class="col-lg-5 col-sm-12 "><img [src]="images[2]" class="img-fluid"></div>
+                    <div class="col-lg-7 col-sm-12">
+                      <div class="carousel-text-bg">
+                        <h2>What is Lorem Ipsum?</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                          industry. </p>
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+            </div>
+          </ngb-carousel>
+        </div>
+        <div class="col-lg-2 col-sm-12 mb-30">
+          <div class="right-panel h-100">
+            <div class="w-100 p-3">
+              <h2>What is New</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut perferendis ullam
+                cumque.
+                Ipsum, ullam cupiditate iure earum repellat, voluptatum dolore,
+                aperiam repudiandae culpa eius excepturi distinctio omnis quo rem tempore!</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
